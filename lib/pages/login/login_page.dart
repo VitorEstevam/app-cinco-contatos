@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
-class SignupPage extends StatefulWidget {
+class LoginPage extends StatefulWidget {
   @override
-  _SignupPageState createState() => _SignupPageState();
+  _LoginPageState createState() => _LoginPageState();
 }
 
-class _SignupPageState extends State<SignupPage> {
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -17,25 +18,13 @@ class _SignupPageState extends State<SignupPage> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'Signup',
+                'Login',
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.headline2,
               ),
             ),
             SizedBox(
               height: 30.0,
-            ),
-            TextField(
-              decoration: InputDecoration(
-                hintText: 'Name',
-                suffixIcon: Icon(Icons.account_circle),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20.0),
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 20.0,
             ),
             TextField(
               decoration: InputDecoration(
@@ -63,12 +52,21 @@ class _SignupPageState extends State<SignupPage> {
               height: 30.0,
             ),
             ElevatedButton(
-              child: Text('Signup'),
+              child: Text('Login'),
               style: ButtonStyle(
                   minimumSize: MaterialStateProperty.all(Size(200, 50)),
                   backgroundColor: MaterialStateProperty.all(
                       Theme.of(context).primaryColor)),
-              onPressed: () {},
+              onPressed: () {
+                Fluttertoast.showToast(
+                    msg: "Login indisponivel. Crie um novo usuário",
+                    toastLength: Toast.LENGTH_SHORT,
+                    gravity: ToastGravity.SNACKBAR,
+                    timeInSecForIosWeb: 1,
+                    backgroundColor: Colors.red,
+                    textColor: Colors.white,
+                    fontSize: 16.0);
+              },
             ),
           ],
         ),
