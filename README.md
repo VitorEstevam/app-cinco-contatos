@@ -4,9 +4,9 @@ Projeto para a cadeira de PDM feito em flutter usando mobX com provider e Shared
 
 ### login
 - [x] models e store
-- [ ] tela
-- [ ] integrar 
-- [ ] salvar dados
+- [x] tela
+- [x] integrar 
+- [x] salvar dados
 
 ### contatos
 - [ ] tela contatos
@@ -15,3 +15,7 @@ Projeto para a cadeira de PDM feito em flutter usando mobX com provider e Shared
 - [ ] ligar
 
 
+* salvar os contatos de um jeito atrelado ao user (ou n)
+* desenhar um component pra mostrar o nome + numero de
+* dial
+* apagar (arrastando pro lado)

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:provider/provider.dart';
 
+import 'models/contact/userContactStore.dart';
 import 'models/userStore.dart';
 import 'pages/contacts/contacts_page.dart';
 import 'pages/login/enter_page.dart';
@@ -18,6 +19,7 @@ class AppProvider extends StatelessWidget {
     return MultiProvider(
       providers: [
         Provider<UserStore>(create: (_) => UserStore()),
+        Provider<UserContactStore>(create: (_) => UserContactStore()),
       ],
       child: MaterialApp(
         title: 'Cinco contatos',

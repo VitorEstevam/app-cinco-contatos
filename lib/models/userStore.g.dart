@@ -24,6 +24,13 @@ mixin _$UserStore on _UserStore, Store {
     });
   }
 
+  final _$loadUserAsyncAction = AsyncAction('_UserStore.loadUser');
+
+  @override
+  Future loadUser() {
+    return _$loadUserAsyncAction.run(() => super.loadUser());
+  }
+
   final _$_UserStoreActionController = ActionController(name: '_UserStore');
 
   @override
@@ -33,6 +40,17 @@ mixin _$UserStore on _UserStore, Store {
     try {
       return super
           .fakeLogin(pName: pName, pEmail: pEmail, pPassword: pPassword);
+    } finally {
+      _$_UserStoreActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  dynamic logout() {
+    final _$actionInfo =
+        _$_UserStoreActionController.startAction(name: '_UserStore.logout');
+    try {
+      return super.logout();
     } finally {
       _$_UserStoreActionController.endAction(_$actionInfo);
     }
