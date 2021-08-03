@@ -1,21 +1,9 @@
-# cinco_contatos
+# cinco contatos
 
 Projeto para a cadeira de PDM feito em flutter usando mobX com provider e Shared_preferences
 
-### login
-- [x] models e store
-- [x] tela
-- [x] integrar 
-- [x] salvar dados
-
-### contatos
-- [ ] tela contatos
-- [ ] pegar contatos
-- [ ] salvar contatos
-- [ ] ligar
-
-
-* salvar os contatos de um jeito atrelado ao user (ou n)
-* desenhar um component pra mostrar o nome + numero de
-* dial
-* apagar (arrastando pro lado)
+* salva o usuário depois de logar
+* permite adicionar, contatos direto da agenda nos contatos de emergência
+* permite remover os contatos da lista de emergencia ao arrastar pro lado
+* permite ligar para o contato e acessar o discador diretamente pelo app
+* permite deslogar
