@@ -7,3 +7,6 @@ Projeto para a cadeira de PDM feito em flutter usando mobX com provider e Shared
 * permite remover os contatos da lista de emergencia ao arrastar pro lado
 * permite ligar para o contato e acessar o discador diretamente pelo app
 * permite deslogar
+
+
+[download do apk](https://github.com/VitorEstevam/app-cinco-contatos/raw/master/cinco_contatos.apk)
