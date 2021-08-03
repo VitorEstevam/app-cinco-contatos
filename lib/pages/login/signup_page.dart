@@ -1,16 +1,16 @@
-import 'package:cinco_contatos/models/userStore.dart';
+import 'package:cinco_contatos/models/user/userStore.dart';
 import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
 
-class SignupPage extends StatefulWidget {
-  const SignupPage({Key? key}) : super(key: key);
+class SignupComponent extends StatefulWidget {
+  const SignupComponent({Key? key}) : super(key: key);
 
   @override
-  _SignupPageState createState() => _SignupPageState();
+  _SignupComponentState createState() => _SignupComponentState();
 }
 
-class _SignupPageState extends State<SignupPage> {
+class _SignupComponentState extends State<SignupComponent> {
   String? name, email, password;
   @override
   Widget build(BuildContext context) {

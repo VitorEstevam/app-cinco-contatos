@@ -23,12 +23,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  mobx: ^2.0.3
-  flutter_mobx: ^2.0.1
-  provider: ^5.0.0
-  shared_preferences: ^2.0.6
-  flutter_contacts: ^1.1.0+3
-  fluttertoast: ^8.0.7
+  mobx: ^2.0.3 #estado
+  flutter_mobx: ^2.0.1 #estado
+  provider: ^5.0.0 #estado
+  shared_preferences: ^2.0.6 #salvar infos
+  flutter_contacts: ^1.1.0+3 #api contatos
+  fluttertoast: ^8.0.7 #mensagem popup
+  flutter_slidable: ^0.6.0 #slide da list view
+  url_launcher: ^6.0.9 #chamar ligação
 
   cupertino_icons: ^1.0.2
 

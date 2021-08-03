@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
-class LoginPage extends StatefulWidget {
+class LoginComponent extends StatefulWidget {
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _LoginComponentState createState() => _LoginComponentState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _LoginComponentState extends State<LoginComponent> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(

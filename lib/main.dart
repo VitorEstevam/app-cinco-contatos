@@ -3,7 +3,7 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:provider/provider.dart';
 
 import 'models/contact/userContactStore.dart';
-import 'models/userStore.dart';
+import 'models/user/userStore.dart';
 import 'pages/contacts/contacts_page.dart';
 import 'pages/login/enter_page.dart';
 

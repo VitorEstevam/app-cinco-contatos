@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'login_page.dart';
-import 'signupPage.dart';
+import 'login_component.dart';
+import 'signup_page.dart';
 
 class EnterPage extends StatelessWidget {
   const EnterPage({Key? key}) : super(key: key);
@@ -17,8 +17,8 @@ class EnterPage extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            Builder(builder: (context) => LoginPage()),
-            Builder(builder: (context) => SignupPage()),
+            Builder(builder: (context) => LoginComponent()),
+            Builder(builder: (context) => SignupComponent()),
           ],
         ),
         bottomNavigationBar: Container(

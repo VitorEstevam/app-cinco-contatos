@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:cinco_contatos/models/user.dart';
+import 'package:cinco_contatos/models/user/user.dart';
 import 'package:mobx/mobx.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 part 'userStore.g.dart';

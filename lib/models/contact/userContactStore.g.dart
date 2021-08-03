@@ -24,6 +24,14 @@ mixin _$UserContactStore on _UserContactStore, Store {
     });
   }
 
+  final _$loadUserContactAsyncAction =
+      AsyncAction('_UserContactStore.loadUserContact');
+
+  @override
+  Future loadUserContact() {
+    return _$loadUserContactAsyncAction.run(() => super.loadUserContact());
+  }
+
   final _$_UserContactStoreActionController =
       ActionController(name: '_UserContactStore');
 
@@ -44,6 +52,17 @@ mixin _$UserContactStore on _UserContactStore, Store {
         name: '_UserContactStore.removeUserContact');
     try {
       return super.removeUserContact(pIndex);
+    } finally {
+      _$_UserContactStoreActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  dynamic cleanUserContacts() {
+    final _$actionInfo = _$_UserContactStoreActionController.startAction(
+        name: '_UserContactStore.cleanUserContacts');
+    try {
+      return super.cleanUserContacts();
     } finally {
       _$_UserContactStoreActionController.endAction(_$actionInfo);
     }
